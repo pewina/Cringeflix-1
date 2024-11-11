@@ -1,0 +1,115 @@
+.navbar{
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
+    z-index: 1;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+.navbar-left img{
+    width: 100px; 
+}
+.navbar-left ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar-left ul li{
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+.navbar-right .profile{
+    border-radius: 4px;
+    width: 35px;
+}
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.navbar .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+}
+.nav-dark{
+    background:#141414;
+}
+@media (max-width: 800px) {
+    .navbar{
+        padding: 20px 4%;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar img{
+        height: 25px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar img{
+        height: 20px;
+    }
+    .navbar-right{
+        gap: 10px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar {
+        padding: 15px 2%; /* Reduce padding */
+        font-size: 12px; /* Smaller font size */
+    }
+    .navbar-left img {
+        width: 80px; /* Smaller logo */
+    }
+    .navbar-left ul {
+        display: none; /* Hide navigation links */
+    }
+    .navbar-right {
+        gap: 5px; /* Reduce gap between elements */
+    }
+    .navbar-right .icons {
+        width: 16px; /* Smaller icons */
+    }
+    .navbar-right .profile {
+        width: 20px; /* Smaller profile image */
+    }
+    .navbar .dropdown {
+        padding: 10px 15px; /* Reduce padding in dropdown */
+    }
+    .navbar .dropdown p {
+        font-size: 11px; /* Smaller font size for dropdown items */
+    }
+}
